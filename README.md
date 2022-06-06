@@ -1,0 +1,1 @@
+# Multi-scale-convolutional-neural-network-for-automated-AMD-classification-using-retinal-OCT-images
