@@ -19,9 +19,11 @@ Age-related macular degeneration (AMD) is the most common cause of blindness in 
 Recent advancements in the field of deep learning have provided a unique opportunity for the development of fully automated diagnosis frameworks. Considering the presence of AMD-related retinal pathologies in varying sizes in OCT images, our objective was to propose a multi-scale convolutional neural network (CNN) that can capture inter-scale variations and improve performance using a feature fusion strategy across convolutional blocks.
 
 ### Methods
+![alt text](<./figures/Fig_2.png>)
 Our proposed method introduces a multi-scale CNN based on the feature pyramid network (FPN) structure. This method is used for the reliable diagnosis of normal and two common clinical characteristics of dry and wet AMD, namely drusen and choroidal neovascularization (CNV). The proposed method is evaluated on the national dataset gathered at Hospital (NEH) for this study, consisting of 12649 retinal OCT images from 441 patients, and the UCSD public dataset, consisting of 108312 OCT images from 4686 patients.
 
 ### Results
+![alt text](<./figures/Fig_3.png>)
 Experimental results show the superior performance of our proposed multi-scale structure over several well-known OCT classification frameworks. This feature combination strategy has proved to be effective on all tested backbone models, with improvements ranging from 0.4% to 3.3%. In addition, gradual learning has proved to be effective in improving performance in two consecutive stages. In the first stage, the performance was boosted from 87.2%+-2.5% to 92.0%+-1.6% using pre-trained ImageNet weights. In the second stage, another performance boost from 92.0%+-1.6% to 93.4%+-1.4% was observed as a result of fine-tuning the previous model on the UCSD dataset. Lastly, generating heatmaps provided additional proof for the effectiveness of our multi-scale structure, enabling the detection of retinal pathologies appearing in different sizes.
 
 ### Conclusion
